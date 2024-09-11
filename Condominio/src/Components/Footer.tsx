@@ -3,12 +3,15 @@ import '../index.css';
 const Footer: React.FC = () => {
     return (
         <footer className='footer'>
-            <p className="read-the-docs">
-                Cuenta Bancaria BCP: 21500073173008
-            </p>
-            <p className="read-the-docs">
-                Cuenta Interbancaria (CCI): 00221510007317300820
-            </p>
+        <section className='infoImportante'>
+        <h2>Cuenta Bancaria</h2>
+        <p>
+            BCP: 21500073173008
+        </p>
+        <p>
+            Interbancaria (CCI): 00221510007317300820
+        </p>
+        </section>
         </footer>
     );
 };

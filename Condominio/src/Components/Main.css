@@ -70,3 +70,9 @@ table {
       padding: 5px;
     }
   }
+
+  .infoImportante
+  {
+    padding: 20px;
+    text-align: center;
+  }

@@ -84,7 +84,7 @@ const Main: React.FC = () => {
         <main className="main">
             <div className='search-bar'>
                 <select className='selectDepa' value={selectedOption} onChange={handleSelectChange}>
-                    <option id='000' key='000' value='000' className='selectOption'>--------</option>
+                    <option id='000' key='000' value='000' className='selectOption'>----------</option>
                     {
                         depas.map(depa => (
                             <option id={depa} key={depa} value={depa} className='selectOption'>
@@ -96,26 +96,29 @@ const Main: React.FC = () => {
             </div>
             {filteredData.length <= 0 && (<p>Sin resultados</p>)}
             {filteredData.length > 0 && (
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            Mes
-                        </th>
-                        <th>
-                            Estado
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {filteredData.map(item => (
-                        <tr>
-                            <td>{item.description}</td>
-                            <td>{getStatusIcon(item.status)} {item.status}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+                <>
+                    <p>Resultados para departamento: {selectedOption}</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Mes
+                                </th>
+                                <th>
+                                    Estado
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {filteredData.map(item => (
+                                <tr>
+                                    <td>{item.description}</td>
+                                    <td>{getStatusIcon(item.status)} {item.status}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </>
             )}
         </main>
     );

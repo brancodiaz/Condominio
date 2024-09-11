@@ -1,6 +1,6 @@
 .footer { 
     grid-row: 3;
     background-color: #f1f1f1;
-    padding: 10px;
+    padding: 0px 30px;
     text-align: center;
 }
