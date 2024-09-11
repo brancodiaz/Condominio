@@ -3,7 +3,7 @@ import '../index.css';
 const Header: React.FC = () => {
     return (
         <header>
-            <h1>Estado de cuotas de mantenimiento</h1>
+            <h1>Mantenimiento</h1>
         </header>
     );
 };
