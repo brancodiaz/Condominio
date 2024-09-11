@@ -1,0 +1,7 @@
+header {
+    grid-row: 1;
+    padding: 30px;
+    text-align: center;
+    border-color: black;
+    border-bottom: 1px inset;
+}

@@ -1,0 +1,71 @@
+main {
+    grid-row: 2;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items:center; 
+     /* justify-content: center; */
+     /* min-width: 600px; */
+}
+
+.search-bar {
+    display: flex; /* Enable flexbox for horizontal alignment */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 10px; /* Space between the search bar and results */
+    margin-bottom: 5px; /* Space between the search bar and results */
+}
+
+.results-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between; /* Space between description and icon */
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the table */
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .selectDepa {
+    height: 34px;
+    border: 1px solid;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .selectOption {
+    font-size: 1.4 rem;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    table {
+      width: 100%; /* Ensure the table fills the screen on smaller devices */
+    }
+  
+    th, td {
+      padding: 5px;
+    }
+  }
